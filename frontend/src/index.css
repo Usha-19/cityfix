@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  /* Base font size drives every rem-based size (text, spacing, radii) app-wide.
+     Bumping this scales the whole UI up for better readability. */
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+html,
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Leaflet map sizing */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}

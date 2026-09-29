@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Env / secrets
+.env
+*.env
+!.env.example
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Local databases (seeded/dev data — regenerate with alembic + seed scripts)
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads / local storage
+backend/uploads/
+uploads/
+
+# Frontend build/type artifacts
+frontend/.tsnode/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
